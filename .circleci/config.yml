@@ -11,9 +11,6 @@ install_secman_windows: &install_secman_windows
 
 jobs:
   node-latest: &test
-    docker:
-      - image: node:latest
-
     executor: win/default
 
     working_directory: ~/cli
@@ -39,8 +36,6 @@ jobs:
 
   node-12:
     <<: *test
-    docker:
-      - image: node:12
 
   cache:
     <<: *test
