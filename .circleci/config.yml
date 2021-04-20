@@ -1,5 +1,4 @@
----
-version: 2
+version: 2.1
 
 orbs:
   ruby: circleci/ruby@1.0
@@ -11,10 +10,9 @@ install_secman_windows: &install_secman_windows
 
 jobs:
   node-latest: &test
-    docker:
-      - image: node:latest
-
-    executor: win/default
+    executor:
+      name: win/default
+      shell: powershell.exe
 
     working_directory: ~/cli
     steps:
@@ -37,11 +35,6 @@ jobs:
           name: Testing
           command: npm test
 
-  node-12:
-    <<: *test
-    docker:
-      - image: node:12
-
   cache:
     <<: *test
     steps:
@@ -61,7 +54,6 @@ workflows:
   "sm-upg":
     jobs:
       - node-latest
-      - node-12
       - cache:
           filters:
             tags:
