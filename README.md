@@ -14,7 +14,7 @@ sub-app of secman for windows
 # Install
 
 ```bash
-npm install -g @secman/sm-upg
+npm i -g @secman/sm-upg
 ```
 
 # Usage
@@ -22,7 +22,7 @@ npm install -g @secman/sm-upg
 $ sm-upg COMMAND
 
 running command...
-$ sm-upg (-v|--version|version)
+$ sm-upg (-v | --version | version)
 
 @secman/sm-upg/0.1.3 linux-x64 node-v15.10.0
 $ sm-upg --help [COMMAND]
