@@ -3,20 +3,32 @@ const PowerShell = require("powershell");
 
 class UninstallCommand extends Command {
   async run() {
-    const d = flags["delete-data"] | "";
+    const { flags } = this.parse(UninstallCommand);
+    const coreCmd = "& $HOME/sm/uninstall.ps1";
 
-    let ps = new PowerShell(`& $HOME/sm/uninstall.ps1 ${d}`);
+    if (flags["delete-data"]) {
+      let ps = new PowerShell(`${coreCmd} -d`);
 
-    ps.on("output", (out) => {
-      console.log(out);
-    });
+      ps.on("output", (out) => {
+        console.log(out);
+      });
+    } else {
+      let ps = new PowerShell(coreCmd);
+
+      ps.on("output", (out) => {
+        console.log(out);
+      });
+    }
   }
 }
 
 UninstallCommand.description = `Uninstall your secman`;
 
 UninstallCommand.flags = {
-  "delete-data": flags.boolean({ char: "d", description: "delete data (~/.secman)" }),
+  "delete-data": flags.boolean({
+    char: "d",
+    description: "delete data (~/.secman)",
+  }),
 };
 
 module.exports = UninstallCommand;
