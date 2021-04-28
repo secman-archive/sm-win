@@ -24,7 +24,7 @@ $ sm-upg COMMAND
 running command...
 $ sm-upg (-v | --version | version)
 
-@secman/sm-upg/0.1.3 linux-x64 node-v15.10.0
+@secman/sm-upg/0.1.4 win32-x64
 $ sm-upg --help [COMMAND]
 USAGE
   $ sm-upg COMMAND
@@ -32,7 +32,9 @@ USAGE
 
 # Commands
 * [`sm-upg help [COMMAND]`](#sm-upg-help-command)
+* [`sm-upg fetch`](#sm-upg-fetch)
 * [`sm-upg start`](#sm-upg-start)
+* [`sm-upg uninstall`](#sm-upg-uninstall)
 
 ## `sm-upg help [COMMAND]`
 
@@ -49,6 +51,15 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
+## `sm-upg fetch`
+
+Fetch if there's a new release.
+
+```
+USAGE
+  $ sm-upg fetch
+```
+
 ## `sm-upg start`
 
 Start Upgrade secman
@@ -56,4 +67,16 @@ Start Upgrade secman
 ```
 USAGE
   $ sm-upg start
+```
+
+## `sm-upg uninstall`
+
+Uninstall your secman
+
+```
+USAGE
+  $ sm-upg uninstall
+
+OPTIONS
+  -d, --delete-data  delete data (~/.secman)
 ```
