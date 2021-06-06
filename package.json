@@ -1,7 +1,7 @@
 {
   "name": "@secman/sm-win",
   "description": "sub-app of secman for windows",
-  "version": "0.2.3",
+  "version": "0.2.31",
   "author": "@abdfnx",
   "bin": {
     "sm-win": "./bin/run"
@@ -22,7 +22,7 @@
     "/oclif.manifest.json",
     "/src"
   ],
-  "homepage": "https://secman.dev/docs/secman/sm-win",
+  "homepage": "https://sm-win.secman.dev/",
   "keywords": [
     "upgrader",
     "secman",
