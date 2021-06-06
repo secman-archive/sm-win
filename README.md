@@ -1,10 +1,9 @@
-sm-upg
-======
+# <img src="https://assets.secman.dev/apps/sm-win.svg" width="300px" />
 
 sub-app of secman for windows
 
-![sm-upg version](https://img.shields.io/npm/v/@secman/sm-upg?color=blue&label=version&logo=npm&style=flat-square)
-![npm](https://img.shields.io/npm/dw/@secman/sm-upg?style=flat-square)
+![sm-win version](https://img.shields.io/npm/v/@secman/sm-win?color=blue&label=version&logo=npm&style=flat-square)
+![npm](https://img.shields.io/npm/dw/@secman/sm-win?style=flat-square)
 
 * [Usage](#usage)
 * [Commands](#commands)
@@ -14,35 +13,35 @@ sub-app of secman for windows
 # Install
 
 ```bash
-npm i -g @secman/sm-upg
+npm i -g @secman/sm-win
 ```
 
 # Usage
 ```sh-session
-$ sm-upg COMMAND
+$ sm-win COMMAND
 
 running command...
-$ sm-upg (-v | --version | version)
+$ sm-win (-v | --version | version)
 
-@secman/sm-upg/0.2.2 win32-x64
-$ sm-upg --help [COMMAND]
+@secman/sm-win/0.2.2 win32-x64
+$ sm-win --help [COMMAND]
 USAGE
-  $ sm-upg COMMAND
+  $ sm-win COMMAND
 ```
 
 # Commands
-* [`sm-upg help [COMMAND]`](#sm-upg-help-command)
-* [`sm-upg fetch`](#sm-upg-fetch)
-* [`sm-upg start`](#sm-upg-start)
-* [`sm-upg uninstall`](#sm-upg-uninstall)
+* [`sm-win help [COMMAND]`](#sm-win-help-command)
+* [`sm-win fetch`](#sm-win-fetch)
+* [`sm-win start`](#sm-win-start)
+* [`sm-win uninstall`](#sm-win-uninstall)
 
-## `sm-upg help [COMMAND]`
+## `sm-win help [COMMAND]`
 
-display help for sm-upg
+display help for sm-win
 
 ```
 USAGE
-  $ sm-upg help [COMMAND]
+  $ sm-win help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
@@ -51,31 +50,31 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-## `sm-upg fetch`
+## `sm-win fetch`
 
 Fetch if there's a new release.
 
 ```
 USAGE
-  $ sm-upg fetch
+  $ sm-win fetch
 ```
 
-## `sm-upg start`
+## `sm-win start`
 
 Start Upgrade secman
 
 ```
 USAGE
-  $ sm-upg start
+  $ sm-win start
 ```
 
-## `sm-upg uninstall`
+## `sm-win uninstall`
 
 Uninstall your secman
 
 ```
 USAGE
-  $ sm-upg uninstall
+  $ sm-win uninstall
 
 OPTIONS
   -d, --delete-data  delete data (~/.secman)

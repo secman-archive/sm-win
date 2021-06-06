@@ -1,12 +1,12 @@
 {
-  "name": "@secman/sm-upg",
+  "name": "@secman/sm-win",
   "description": "sub-app of secman for windows",
   "version": "0.2.2",
   "author": "@abdfnx",
   "bin": {
-    "sm-upg": "./bin/run"
+    "sm-win": "./bin/run"
   },
-  "bugs": "https://github.com/secman-team/sm-upg/issues",
+  "bugs": "https://github.com/secman-team/sm-win/issues",
   "dependencies": {
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
@@ -22,7 +22,7 @@
     "/oclif.manifest.json",
     "/src"
   ],
-  "homepage": "https://secman.dev/docs/secman/sm-upg",
+  "homepage": "https://secman.dev/docs/secman/sm-win",
   "keywords": [
     "upgrader",
     "secman",
@@ -32,12 +32,12 @@
   "main": "src/index.js",
   "oclif": {
     "commands": "./src/commands",
-    "bin": "sm-upg",
+    "bin": "sm-win",
     "plugins": [
       "@oclif/plugin-help"
     ]
   },
-  "repository": "secman-team/sm-upg",
+  "repository": "secman-team/sm-win",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint .",
