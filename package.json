@@ -6,7 +6,7 @@
   "bin": {
     "sm-win": "./bin/run"
   },
-  "bugs": "https://github.com/secman-team/sm-win/issues",
+  "bugs": "https://github.com/scmn-dev/sm-win/issues",
   "dependencies": {
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
@@ -37,7 +37,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "secman-team/sm-win",
+  "repository": "scmn-dev/sm-win",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint .",
